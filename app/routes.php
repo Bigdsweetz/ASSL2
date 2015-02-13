@@ -54,16 +54,21 @@ Route::post('thanks', function()
 
 
 */
+
+//This is the default home page
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('login');
 });
 
+
+//This is the register page
 Route::get('/register', function()
 {
 	return View::make('register');
 });
 
+//This is where the user inputs their data from the register page
 Route::post('/register', function()
 {
 	$user = new User;
@@ -77,3 +82,39 @@ Route::post('/register', function()
 	return View::make('thanks') ->with('theUsername' ,$theUsername);
 
 });
+
+
+//This is the Log in  page
+Route::get('/login', function()
+{
+	return View::make('login');
+});
+
+/*User goes to login and is challanged here. If successful log in, User goes to profile page, if not user
+is redirected to login page */
+
+Route::post('/login', function()
+{
+	$credentials = Input::only('username', 'password');
+	if (Auth::attempt($credentials)) {
+		return Redirect::intended('/');
+	}
+	return Redirect::to('login');
+
+	return View::make('login');
+});
+
+//This is the log out page
+Route::get('/logout', function()
+{
+	Auth::logout();
+	return View::make('logout');
+});
+
+//This is the home profile page.
+Route::get('/profile', array(
+'before' => 'auth.basic',
+	function()
+{
+	return View::make('profile');
+}));
