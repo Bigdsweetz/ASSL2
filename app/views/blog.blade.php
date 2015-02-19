@@ -22,23 +22,13 @@
     </header>
     <div id="contentWrapper">
     <article id="mainContent">
-    <h1>Sign Up!</h1>
+    <h1>Blog page</h1>
     <article class="post">
-    <h2>New User Registration</h2>
-    {{ Form::open(array('url' => 'register')) }}
-    {{Form::label('firstname', 'Your First Name')}}
-    {{Form::text('firstname')}}
-    {{Form::label('lastname', 'Your Last Name')}}
-    {{Form::text('lastname')}}
-    {{Form::label('username', 'Create a Username')}}
-    {{Form::text('username')}}
-    {{Form::label('email', 'Email Address')}}
-    {{Form::text('email')}}
-    {{Form::label('password', 'Create a password')}}
-    {{Form::password('password')}}
-    {{Form::submit('Sign Up')}}
+    <h2>New Everyday we bloggin</h2>
 
-    {{Form::close()}}}
+            <a href='newBlog' class="btn btn-succss">+ new Blog</a>
+            <p>Creaet a new blog</P>
+
     </article>
     </article>
     <aside>

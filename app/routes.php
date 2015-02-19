@@ -118,3 +118,9 @@ Route::get('profile', array(
 {
 	return View::make('profile');
 }));
+
+//Create the blog page
+Route::get('/blog', function()
+{
+	return View::make('blog');
+});
