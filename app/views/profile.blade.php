@@ -1,132 +1,137 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Student Spotlight</title>
-<link href="{{ asset('_css/main.css') }}" rel="stylesheet" media="screen, projection">
-</head>
-<body>
-<header class="spotlightHeader pageHeader">
-<h1>Roux Academy of Art and Design<a href="/index.htm" title="home"></a></h1>
-<nav id="pageNav" class="cf">
+  <meta charset="UTF-8">
+  <title>The Opinion Point Log in Page</title>
+  <link rel="stylesheet" type="text/css" href="_css/main.css">
+  <meta name="viewport" content="initial-scale=1.0" />
+  </script>
+  </head>
+  <body id="blogPage">
+  <header class="blogHeader pageHeader">
+  <h1>Welcom to the Opinion Point <a href="/index.htm" title="home"></a></h1>
+
+  <nav id="pageNav" class="cf">
   <ul>
-    <li><a href="programs/programs.htm" title="programs">Programs</a></li>
-    <li><a href="admissions/admissions.htm" title="admissions">Admissions</a></li>
-    <li><a href="student_portal.htm" title="student portal">Student Portal</a></li>
-    <li><a href="campus_portal.htm" title="campus portal">Campus</a></li>    <li><a href="alumni.htm" title="alumni">Alumni</a></li>
-    <li><a href="blog/index.php"  title="Roux Academy Official Blog">Blog</a></li>
-    <li><a href="about/about.htm"  title="about Roux Academy">About</a></li>
-</ul>
-</nav>
-</header>
-<article id="spotlight" class="cf">
- <img src="{{ asset('_images/chow.jpg') }}" width="255" height="400" alt="Gerald Chow" class="student">
- <div class="student">
-  <h1>Student Spotlight</h1>
-  <p>Gerald Chow</p>
-  </div>
-  <div class="artwork">
-  <img src="{{ asset('_images/feature1.jpg') }}" width="168" height="163" alt="thataway">
-  <p><em>Thataway</em> - acrylic</p>
-  </div>
-  <p class="statement">
-Gerald Chow will graduate from Roux Academy this spring with a BFA and a painting concentration. He took his longtime interest in graffiti and street art and has translated it to the canvas in cartoonish, graphical pictures. Chow’s work is becoming increasingly more recognized, winning Excellence Awards in both the 2010 and 2011 Fine Arts Shows at RAA. After receiving his degree, Chow is moving to San Francisco to join the graphic design team PURCHASE as a junior art designer.
-  </p>
-    <div class="artwork cb">
-  <img src="{{ asset('_images/feature2.jpg') }}" width="296" height="381" alt="that tower eats people">
-  <p><em>That Tower Eats People</em> - mixed media</p>
-  </div>
-    <div class="artwork">
-  <img src="{{ asset('_images/feature3.jpg') }}" width="165" height="167" alt="the wall don't lie">
-  <p><em>Don't Lie</em> - photo</p>
-  </div>
-   <div class="artwork">
-  <img src="{{ asset('_images/feature4.jpg') }}" width="229" height="167" alt="running gag">
-  <p><em>Running Gag</em> - acrylic</p>
-  </div>
-     <div class="artwork nrm">
-  <img src="{{ asset('_images/feature5.jpg') }}" width="165" height="167" alt="silly rabbit">
-  <p><em>Silly Rabbit</em> - acrylic</p>
-  </div>
-  <div class="artwork">
-  <img src="{{ asset('_images/feature6.jpg') }}" width="165" height="167" alt="makes you stronger">
-  <p><em>Makes You Stronger</em> - acrylic</p>
-  </div>
-    <div class="artwork nrm">
-  <img src="{{ asset('_images/feature7.jpg') }}" width="421" height="167" alt="having all the facts">
-  <p><em>Having All The Facts</em> (detail) - acrylic</p>
-  </div>
-   <div class="artwork">
-  <img src="{{ asset('_images/feature8.jpg') }}" width="360" height="356" alt="in the details">
-  <p><em>In the Details</em> - silkscreen</p>
-  </div>
-  <div class="artwork">
-  <img src="{{ asset('_images/feature9.jpg') }}" width="229" height="356" alt="out with it">
-  <p><em>Out With It</em> - mixed media</p>
-  </div>
-  <p class="quote">“I’m fascinated with <span class="lavender">urban artwork</span>. Unlike pieces you find in a museum, they become a <span class="orange">living part</span> of the environment they inhabit and create a running <span class="blue">dialog</span> with the viewer.”</p>
+  <li><a href="#" title="HOME">HOME</a></li>
+  <li><a href="#" title="PROFILE">PROFILE</a></li>
+  <li><a href="#" title="BLOG">BLOG</a></li>
+  <li><a href="#" title="CHAT">CHAT</a></li>
+  </ul>
+  </nav>
+  </header>
+  <div id="contentWrapper">
+  <article id="mainContent">
+  <h1>Sign Up!</h1>
+  <article class="post">
+  <h2>New User Profile</h2>
+          <p> Stuff goes here</p>
   </article>
+  </article>
+  <aside>
+  <section class="info">
+  <!-- No need for search at this time...will add later
+  <div class="widget">
+  <h2>Search</h2>
+  <form>
+  <input type="search" id="searchField" placeholder="Enter keyword(s)" />
+  <input type="submit" name="search" id="search" value="">
+  </form>
+  </div> -->
+  <div class="widget">
+  <h2>Hot Links</h2>
+  <ul>
+  <li><a href="#">Anime Con's</a></li>
+  <li><a href="#">Winter Manga List</a></li>
+  <li><a href="#">Feburary Releases</a></li>
+  </ul>
+  </div>
+  <div class="widget">
+  <h2>Blog Archive</h2>
+  <ul>
+  <li><a href="#">February 2015</a></li>
+  <li><a href="#">January 2015</a></li>
+  <li><a href="#">December 2014</a></li>
+  <li><a href="#">November 2014</a></li>
+  </ul>
+  </div>
+  <div class="widget">
+  <h2>Categories</h2>
+  <ul>
+  <li><a href="#">Games</a></li>
+  <li><a href="#">Movies</a></li>
+  <li><a href="#">Books</a></li>
+  <li><a href="#">Cons</a></li>
+  </ul>
+  </div>
+  </section>
+  </aside>
+  </div>
   <footer id="pageFooter" class="cf">
-<nav class="footerNav">
-<section class="col">
-<h3>About Roux Academy</h3>
+  <nav class="footerNav">
+  <section class="col">
+  <h3>About The Opinion Point</h3>
   <div class="col1">
   <ul>
-  <li><a href="mission.htm" title="Our mission">Mission Statement</a></li>
-  <li><a href="history.htm" title="school history">School History</a></li>
-  <li><a href="accreditation.htm" title="accreditation and affliates">Accreditation &amp; Affiliates</a></li>
-  <li><a href="board.htm" title="board members">Board Members</a></li>
+  <li><a href="#" title="Our mission">Mission Statement</a></li>
+  <li><a href="#" title="Humble Beginnings">Humble Beginnings</a></li>
+  <li><a href="#" title="People who like us">People who like us</a></li>
+  <li><a href="#" title="The Team">The Team</a></li>
+  </div>
+  <!--
+  <div class="col2">
+  <ul>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  </ul>
+  </div> -->
+  </section>
+
+    <!-- Links to affiliate sites -->
+
+  <section class="col">
+  <h3>Other Sites</h3>
+  <div class="col1">
+  <ul>
+  <li><a href="#" title="Twitter">Twitter</a></li>
+  <li><a href="#" title="Facebook">Facebook</a></li>
+  <li><a href="#" title="tumblr">tumblr</a></li>
+  <li><a href="#" title="Deviant Art">Deviant Art</a></li>
   </ul>
   </div>
   <div class="col2">
   <ul>
-  <li><a href="faculty.htm" title="faculty and staff">Faculty &amp; Staff</a></li>
-  <li><a href="visiting_professors.htm" title="visiting professors">Visiting Professors</a></li>
-  <li><a href="museum.htm" title="Maribielle Roux Museum">Marbielle Roux Museum</a></li>
-  <li><a href="directions.htm" title="directions">Map &amp; Directions</a></li>
+  <li><a href="#" title="youtube">YouTube</a></li>
+  <li><a href="#" title="Viemo">Viemo</a></li>
+  <li><a href="#" title="Blogger">Blogger</a></li>
+  <li><a href="#" title="Google +">Google +</a></li>
   </ul>
   </div>
-</section>
-<section class="col">
-<h3>Admissions &amp; Programs</h3>
+  </section>
+  <section class="col">
+  <h3>Other Cool Sites</h3>
+  <!--
   <div class="col1">
   <ul>
-  <li><a href="degrees.htm" title="Degree programs">Degree Programs</a></li>
-  <li><a href="catalog.htm" title="course catalog">Course Catalog</a></li>
-  <li><a href="fine_art.htm" title="fine art programs">Fine Art Programs</a></li>
-  <li><a href="design.htm" title="design concentration">Design Concentration</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
+  <li><a href="#" title="place holder">place holder</a></li>
   </ul>
-  </div>
+  </div> -->
   <div class="col2">
   <ul>
-  <li><a href="fashion.htm" title="fashion program">Fashion Program</a></li>
-  <li><a href="product_design.htm" title="product design">Product Design</a></li>
-  <li><a href="continuing_ed.htm" title="Continuing Education">Continuing Education</a></li>
-  <li><a href="financial_aid.htm" title="tuition and financial aid">Tuition &amp; Financial Aid</a></li>
+  <li><a href="#" title="Manga Fox">Manga Fox</a></li>
+  <li><a href="#" title="Bleach Exile">Bleach Exile</a></li>
+  <li><a href="#" title="Manga Town">Manga Town</a></li>
+  <li><a href="#" title="Anime Eden">Anime Eden</a></li>
   </ul>
   </div>
-</section>
-<section class="col">
-<h3>Student Resources</h3>
-  <div class="col1">
-  <ul>
-  <li><a href="campus.htm" title="Campus information">Campus Information</a></li>
-  <li><a href="housing.htm" title="student housing">Student Housing</a></li>
-  <li><a href="contact.htm" title="transcript request">Transcript Request</a></li>
-  <li><a href="applying.htm" title="application process">Application Process</a></li>
-  </ul>
-  </div>
-  <div class="col2">
-  <ul>
-  <li><a href="portfolio_review.htm" title="portfolio review">Portfolio Review</a></li>
-  <li><a href="conselling.htm" title="career counselling">Career Counselling</a></li>
-  <li><a href="internships.htm" title="internship programs">Internship Programs</a></li>
-  <li><a href="student_portal.htm" title="student portal login">Student Portal Login</a></li>
-   </ul>
-  </div>
-</section>
-</nav>
-<p>&copy;Copyright  Roux Academy of Art &amp; Design.  All rights reserved.<a href="privacy.htm" title="privacy statement"> Privacy Statement</a> |<a href="legal.htm" title="legal terms"> Legal Terms and Conditions</a> |<a href="disclosures.htm" title="student outcomes and disclosures"> Student Outcomes/Disclosures</a></p>
-</footer>
-</body>
-</html>
+  </section>
+  </nav>
+  <p>&copy;Copyright  The Opinion Point &amp; Design.  All rights reserved. <a href="#" title="privacy statement">Privacy Statement</a> |<a href="#" title="legal terms"> Legal Terms and Conditions</a> |<a href="#" title="Placeholder"> Place holder</a></p>
+  </footer>
+  </body>
+  </html>
