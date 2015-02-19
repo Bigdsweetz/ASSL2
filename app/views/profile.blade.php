@@ -22,10 +22,23 @@
   </header>
   <div id="contentWrapper">
   <article id="mainContent">
-  <h1>Sign Up!</h1>
+  <h1>User Profile page</h1>
   <article class="post">
-  <h2>New User Profile</h2>
-          <p> Stuff goes here</p>
+  <h2>Hey "Username" </h2>
+
+  <p> A picture goes here</p>
+  <p> Upload</p>
+
+  <p> First Name</p>
+
+  <p> Last Name</p>
+
+  <p> User Name</p>
+
+  <p> Email</p>
+
+  <p> password (maybe)</p>
+
   </article>
   </article>
   <aside>

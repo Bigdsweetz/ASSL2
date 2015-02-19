@@ -101,7 +101,7 @@ Route::post('/login', function()
 	}
 	return Redirect::to('login');
 
-	return View::make('login');
+	return View::make('profile');
 });
 
 //This is the log out page
@@ -112,8 +112,8 @@ Route::get('/logout', function()
 });
 
 //This is the home profile page.
-Route::get('/profile', array(
-'before' => 'auth.basic',
+Route::get('profile', array(
+'before' => 'auth',
 	function()
 {
 	return View::make('profile');
