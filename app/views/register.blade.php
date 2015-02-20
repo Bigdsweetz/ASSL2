@@ -38,7 +38,7 @@
         {{Form::password('password')}}
         {{Form::submit('Sign Up')}}
 
-      {{Form::close()}}}
+      {{Form::close()}}
 </article>
   </article>
   <aside>

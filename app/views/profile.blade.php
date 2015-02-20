@@ -14,9 +14,10 @@
   <nav id="pageNav" class="cf">
   <ul>
   <li><a href="#" title="HOME">HOME</a></li>
-  <li><a href="#" title="PROFILE">PROFILE</a></li>
-  <li><a href="#" title="BLOG">BLOG</a></li>
+  <li>{{ HTML::link('profile', 'PROFILE') }}</li>
+  <li>{{ HTML::link('posts', 'BLOG') }}</li>
   <li><a href="#" title="CHAT">CHAT</a></li>
+  <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
   </ul>
   </nav>
   </header>

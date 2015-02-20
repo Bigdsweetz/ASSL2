@@ -124,3 +124,8 @@ Route::get('/blog', function()
 {
 	return View::make('blog');
 });
+
+//shoves people back to login screent
+Route::group(array('before' => 'auth'), function(){
+		Route::resource('posts', "PostController");
+});

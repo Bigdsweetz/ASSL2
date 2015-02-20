@@ -26,8 +26,8 @@
     <article class="post">
     <h2>New Everyday we bloggin</h2>
 
-            <a href='newBlog' class="btn btn-succss">+ new Blog</a>
-            <p>Creaet a new blog</P>
+    <li>{{ link_to_route('posts.index', 'Posts') }}</li>
+    <li>{{ HTML::link('logout', 'Logout') }}</li>
 
     </article>
     </article>
