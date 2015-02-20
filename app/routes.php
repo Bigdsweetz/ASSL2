@@ -113,7 +113,7 @@ Route::get('/logout', function()
 
 //This is the home profile page.
 Route::get('profile', array(
-'before' => 'auth',
+	'as'=>'profile','before'=>'auth','uses'=>'ProfileController@getProfile',
 	function()
 {
 	return View::make('profile');
@@ -129,3 +129,4 @@ Route::get('/blog', function()
 Route::group(array('before' => 'auth'), function(){
 		Route::resource('posts', "PostController");
 });
+

@@ -25,20 +25,29 @@
   <article id="mainContent">
   <h1>User Profile page</h1>
   <article class="post">
-  <h2>Hey "Username" </h2>
+  <h2>Hey  {{Auth::user()->username}} </h2>
 
-  <p> A picture goes here</p>
-  <p> Upload</p>
+  <div class="container">
 
-  <p> First Name</p>
+  <h1> Welcome {{Auth::user()->username}}</h1>
 
-  <p> Last Name</p>
+  <p>First Name: {{Auth::user()->firstname}}</p>
+  </br>
 
-  <p> User Name</p>
+  <p>Last Name :  {{Auth::user()->lastname}}</p>
+  </br>
 
-  <p> Email</p>
+  <p>Email address:  {{Auth::user()->email}}</p>
+  </br>
 
-  <p> password (maybe)</p>
+
+  <a href="/editProfile" >Edit Profile</a>
+  <br><br>
+
+
+
+
+  </div>
 
 
 
