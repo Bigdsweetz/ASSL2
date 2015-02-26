@@ -16,7 +16,7 @@
   <li><a href="#" title="HOME">HOME</a></li>
   <li>{{ HTML::link('profile', 'PROFILE') }}</li>
   <li>{{ HTML::link('posts', 'BLOG') }}</li>
-  <li>{{ HTML::link('chat', 'CHAT') }}</li>
+  <li><a href="#" title="CHAT">CHAT</a></li>
   <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
   </ul>
   </nav>

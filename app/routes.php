@@ -130,3 +130,8 @@ Route::group(array('before' => 'auth'), function(){
 		Route::resource('posts', "PostController");
 });
 
+//Create the blog page
+Route::get('/chat', function()
+{
+	return View::make('chat');
+});

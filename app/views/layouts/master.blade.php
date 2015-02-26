@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Opinion Point Log in Page</title>
-    <link href="{{asset('_css/main.css')}}" rel="stylesheet">
-    <link href="{{asset('_css/chats.css')}}" rel="stylesheet">
+    {{ HTML::style('_css/main.css') }}
     <meta name="viewport" content="initial-scale=1.0" />
     </script>
     </head>
@@ -15,24 +14,41 @@
     <nav id="pageNav" class="cf">
     <ul>
     <li><a href="#" title="HOME">HOME</a></li>
-    <li><a href="#" title="PROFILE">PROFILE</a></li>
+    <li>{{ HTML::link('profile', 'PROFILE') }}</li>
     <li><a href="#" title="BLOG">BLOG</a></li>
     <li><a href="#" title="CHAT">CHAT</a></li>
+    <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
     </ul>
     </nav>
     </header>
     <div id="contentWrapper">
     <article id="mainContent">
-    <h1>Chatting on the The OP</h1>
+    <h1>Blog page</h1>
     <article class="post">
-    <div class="col-lg-4 col-lg-offset-4">
-    <h1 id="greeting">Hello, <span id="username">{{$username}}</span></h1>
+    <h2>Here from Blog Post</h2>
 
-    <div id="chat-window" class="col-lg-12">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+    @yield('content')
+    </div>
 
 
+    </div>
 
-            
+    <hr>
+
+    <footer>
+    <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+    </div>
+    </footer>
+
+    </div><!-- /.container -->
+
+
 
 
     </article>
@@ -142,7 +158,5 @@
     </nav>
     <p>&copy;Copyright  The Opinion Point &amp; Design.  All rights reserved. <a href="#" title="privacy statement">Privacy Statement</a> |<a href="#" title="legal terms"> Legal Terms and Conditions</a> |<a href="#" title="Placeholder"> Place holder</a></p>
     </footer>
-    <script src="{{asset('_js/jquery-1.11.1.min.js')}}"></script>
-    <script src="{{asset('_js/chats.js')}}"></script>
     </body>
     </html>
