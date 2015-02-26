@@ -120,18 +120,26 @@ Route::get('profile', array(
 }));
 
 //Create the blog page
-Route::get('/blog', function()
+Route::get('blog', array('before' => 'auth', function()
+//Route::get('/blog', function()
 {
 	return View::make('blog');
-});
+}));
 
 //shoves people back to login screent
 Route::group(array('before' => 'auth'), function(){
 		Route::resource('posts', "PostController");
 });
 
-//Create the blog page
-Route::get('/chat', function()
+//Create the chat page
+Route::get('chat', array('before' => 'auth', function()
+//Route::get('/chat', function()
 {
 	return View::make('chat');
+}));
+
+
+Route::get('/signup', function()
+{
+	return View::make('signup');
 });
