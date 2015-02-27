@@ -37,8 +37,6 @@
   <p>Email address:  {{Auth::user()->email}}</p>
   </br>
 
-
-  {{ HTML::link('editProfile', 'Edit Profile') }}
   <br><br>
 
 

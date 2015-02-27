@@ -36,8 +36,6 @@
         {{Form::text('email')}}
         {{Form::label('password', 'Create a password')}}
         {{Form::password('password')}}
-        {{Form::label('about', 'tell us about you')}}
-        {{Form::text('about')}}
         {{Form::submit('Sign Up')}}
 
       {{Form::close()}}
