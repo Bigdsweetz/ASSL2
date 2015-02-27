@@ -28,9 +28,7 @@
 
   <div class="container">
 
-  <h1> Welcome {{Auth::user()->username}}</h1>
-
-  <p>First Name: {{Auth::user()->firstname}}</p>
+   <p>First Name: {{Auth::user()->firstname}}</p>
   </br>
 
   <p>Last Name :  {{Auth::user()->lastname}}</p>
@@ -40,7 +38,7 @@
   </br>
 
 
-  <a href="/editProfile" >Edit Profile</a>
+  {{ HTML::link('editProfile', 'Edit Profile') }}
   <br><br>
 
 

@@ -115,10 +115,29 @@ Route::get('/logout', function()
 Route::get('profile', array(
 	'as'=>'profile','before'=>'auth','uses'=>'ProfileController@getProfile',
 	function()
-{
-	return View::make('profile');
-}));
+	{
+		return View::make('profile');
+	}));
 
+//This is the home profile page.
+Route::get('editProfile', array(
+	'as'=>'profile','before'=>'auth',
+	function()
+	{
+		return View::make('editProfile');
+	}));
+Route::post('/editProfile', function()
+{
+	$user = Auth::id();
+	//$user->firstname = Input::get('firstname');
+	//$user->lastname = Input::get('lastname');
+	//$user->email = Input::get('email');
+	//$user->about = Input::get('about');
+	//$user->save();
+
+	return Redirect::to('profile');
+
+});
 //Create the blog page
 Route::get('blog', array('before' => 'auth', function()
 //Route::get('/blog', function()
@@ -128,7 +147,7 @@ Route::get('blog', array('before' => 'auth', function()
 
 //shoves people back to login screent
 Route::group(array('before' => 'auth'), function(){
-		Route::resource('posts', "PostController");
+	Route::resource('posts', "PostController");
 });
 
 //Create the chat page

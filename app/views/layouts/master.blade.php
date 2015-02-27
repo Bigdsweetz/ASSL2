@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Opinion Point Log in Page</title>
-    {{ HTML::style('_css/main.css') }}
+    {{ HTML::style('_css/blog.css') }}
     <meta name="viewport" content="initial-scale=1.0" />
     </script>
     </head>
@@ -13,10 +13,9 @@
 
     <nav id="pageNav" class="cf">
     <ul>
-    <li><a href="#" title="HOME">HOME</a></li>
     <li>{{ HTML::link('profile', 'PROFILE') }}</li>
-    <li><a href="#" title="BLOG">BLOG</a></li>
-    <li><a href="#" title="CHAT">CHAT</a></li>
+    <li>{{ HTML::link('blog', 'BLOG') }}</li>
+    <li>{{ HTML::link('chat', 'CHAT') }}</li>
     <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
     </ul>
     </nav>
@@ -31,6 +30,7 @@
     <div class="row">
     <div class="col-lg-12">
     @yield('content')
+
     </div>
 
 
@@ -63,7 +63,7 @@
     <input type="submit" name="search" id="search" value="">
     </form>
     </div> -->
-    <div class="widget">
+    <!--<div class="widget">
     <h2>Hot Links</h2>
     <ul>
     <li><a href="#">Anime Con's</a></li>
@@ -89,7 +89,7 @@
     <li><a href="#">Cons</a></li>
     </ul>
     </div>
-    </section>
+    </section> -->
     </aside>
     </div>
     <footer id="pageFooter" class="cf">

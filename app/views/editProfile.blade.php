@@ -13,29 +13,26 @@
 
     <nav id="pageNav" class="cf">
     <ul>
-    <li>{{ HTML::link('login', 'LOGIN') }}</li>
-    <li>{{ HTML::link('register', 'SIGN UP') }}</li>
     <li>{{ HTML::link('profile', 'PROFILE') }}</li>
     <li>{{ HTML::link('blog', 'BLOG') }}</li>
     <li>{{ HTML::link('chat', 'CHAT') }}</li>
-    </ul>
+    <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
     </ul>
     </nav>
     </header>
     <div id="contentWrapper">
     <article id="mainContent">
-    <h1>Loggin in to The Opinion Point!</h1>
-    <article class="post">
-    <h2>Please login</h2>
-    {{ Form::open(array('url' => 'login')) }}
-    {{Form::label('username', 'Username')}}
-    {{Form::text('username')}}
-    {{Form::label('password', 'Password')}}
-    {{Form::password('password')}}
+    <h1>Edit {{Auth::user()->username}} Profile page</h1>
 
-    {{Form::submit('Login')}}
+    {{ Form::open(array('url' => 'editProfile')) }}
+
+    {{Form::label('about', 'tell us about you')}}
+    {{Form::textarea('about')}}
+    {{Form::submit('update')}}
 
     {{Form::close()}}
+
+
     </article>
     </article>
     <aside>
@@ -143,5 +140,10 @@
     </nav>
     <p>&copy;Copyright  The Opinion Point &amp; Design.  All rights reserved. <a href="#" title="privacy statement">Privacy Statement</a> |<a href="#" title="legal terms"> Legal Terms and Conditions</a> |<a href="#" title="Placeholder"> Place holder</a></p>
     </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="../../js/editProfile.js"></script>
     </body>
     </html>

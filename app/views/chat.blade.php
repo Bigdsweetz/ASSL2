@@ -24,7 +24,7 @@
     <ul>
         <li>{{ HTML::link('profile', 'PROFILE') }}</li>
         <li>{{ HTML::link('blog', 'BLOG') }}</li>
-        <li>{{ HTML::link('CHAT', 'CHAT') }}</li>
+        <li>{{ HTML::link('chat', 'CHAT') }}</li>
         <li>{{ HTML::link('logout', 'LOGOUT') }}</li>
     </ul>
     </nav>
